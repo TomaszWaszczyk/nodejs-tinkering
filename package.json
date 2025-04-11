@@ -19,5 +19,9 @@
   "bugs": {
     "url": "https://github.com/TomaszWaszczyk/nodejs-tinkering/issues"
   },
-  "homepage": "https://github.com/TomaszWaszczyk/nodejs-tinkering#readme"
+  "homepage": "https://github.com/TomaszWaszczyk/nodejs-tinkering#readme",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "http": "^0.0.1-security"
+  }
 }
