@@ -5,3 +5,5 @@ setTimeout(() => {
   
     console.log(`${delay}ms have passed since I was scheduled`);
 }, 100);
+
+console.time('timeout');
