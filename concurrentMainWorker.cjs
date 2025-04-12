@@ -1,5 +1,9 @@
+const { availableParallelism } = require('node:os');
 const { Worker } = require('worker_threads');
 const path = require('path');
+
+const numCPUs = availableParallelism();
+console.log(`Number of available CPUs: ${numCPUs}`);
 
 function runHashWorker(input) {
   return new Promise((resolve, reject) => {
