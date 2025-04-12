@@ -23,5 +23,8 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "http": "^0.0.1-security"
+  },
+  "devDependencies": {
+    "clinic": "^13.0.0"
   }
 }
