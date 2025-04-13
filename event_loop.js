@@ -44,3 +44,11 @@ Promise.resolve().then(() => {
 });
 
 console.log('End Event Loop Demo');
+/* 
+Start Event Loop Demo
+End Event Loop Demo
+>> process.nextTick
+>> Promise.resolve().then
+>> setTimeout 0ms
+>> setImmediate
+*/
