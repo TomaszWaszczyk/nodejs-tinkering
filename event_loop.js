@@ -4,8 +4,8 @@ const http = require('http');
 const fs = require('fs');
 
 
-const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
-console.log(config);
+// const config = JSON.parse(fs.readFileSync('config.json', 'utf8'));
+// console.log(config);
 
 
 
@@ -24,3 +24,23 @@ console.log(config);
 // }, 100);
 
 // console.time('timeout');
+
+console.log('Start Event Loop Demo');
+
+process.nextTick(() => {
+  console.log('>> process.nextTick');
+});
+
+setTimeout(() => {
+  console.log('>> setTimeout 0ms');
+}, 0);
+
+setImmediate(() => {
+  console.log('>> setImmediate');
+});
+
+Promise.resolve().then(() => {
+  console.log('>> Promise.resolve().then');
+});
+
+console.log('End Event Loop Demo');
