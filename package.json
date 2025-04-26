@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "vitest"
   },
   "repository": {
     "type": "git",
@@ -25,6 +25,7 @@
     "http": "^0.0.1-security"
   },
   "devDependencies": {
-    "clinic": "^13.0.0"
+    "clinic": "^13.0.0",
+    "vitest": "^3.1.2"
   }
 }
