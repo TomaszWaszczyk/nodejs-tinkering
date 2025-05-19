@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "vitest"
+    "test": "vitest",
+    "testing": "node --test stack.test.mjs"
   },
   "repository": {
     "type": "git",
