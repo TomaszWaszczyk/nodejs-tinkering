@@ -6,7 +6,7 @@ function greeting(){
     console.log(`Hello, my name is ${this.name}`)
 }
 
-var greet = {
+let greet = {
     name: 'Tomek',
 };
 
