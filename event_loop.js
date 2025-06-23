@@ -1,5 +1,6 @@
 // https://nodejs.org/en/learn/asynchronous-work/event-loop-timers-and-nexttick
 // http://latentflip.com/loupe
+// https://www.builder.io/blog/NodeJS-visualizing-nextTick-and-promise-queues
 const http = require('http');
 const fs = require('fs');
 
@@ -52,3 +53,11 @@ End Event Loop Demo
 >> setTimeout 0ms
 >> setImmediate
 */
+
+// Synchronous code (console.log('Start') and console.log('End')) runs first.
+
+// process.nextTick and Promise microtasks are executed immediately after the synchronous code, before timers and immediates.
+
+// setTimeout and setImmediate callbacks are processed in later event loop phases.
+
+// This example lets you see the priority of microtasks (process.nextTick, Promise) over macrotasks (setTimeout, setImmediate) in the Node.js event loop.
