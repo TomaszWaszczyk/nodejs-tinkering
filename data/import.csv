@@ -1,0 +1,6 @@
+name,email,age,salary,isActive
+Anna Nowak,anna.nowak@email.com,31,13000,true
+Jan Kowalski,jan.kowalski@email.com,27,9000,false
+Maria Zielinska,maria.zielinska@email.com,35,14500,true
+Piotr Nowicki,piotr.nowicki@email.com,40,11000,true
+Tomasz Wojcik,tomasz.wojcik@email.com,29,8500,false
