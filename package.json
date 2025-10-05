@@ -25,7 +25,8 @@
     "cors": "^2.8.5",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
-    "http": "^0.0.1-security"
+    "http": "^0.0.1-security",
+    "csv-parser": "^3.0.0"
   },
   "devDependencies": {
     "clinic": "^13.0.0",
