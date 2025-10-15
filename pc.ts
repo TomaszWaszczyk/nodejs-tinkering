@@ -35,7 +35,7 @@ type Product = {
 type CartLine = {
   product: Product;
   quantity: number;
-  lineTotal: number;
+  lineTotalPrice: number;
 };
 
 type Receipt = {
@@ -70,18 +70,18 @@ class SupermarketCheckout {
     for (const [id, quantity] of this.cart.entries()) {
       const product = this.products.get(id)!;
       const { price, multiprice } = product;
-      let lineTotal = 0;
+      let lineTotalPrice = 0;
 
       if (multiprice) {
         const numDeals = Math.floor(quantity / multiprice.quantity);
         const singleItems = quantity % multiprice.quantity;
-        lineTotal = numDeals * multiprice.totalPrice + singleItems * price;
+        lineTotalPrice = numDeals * multiprice.totalPrice + singleItems * price;
       } else {
-        lineTotal = quantity * price;
+        lineTotalPrice = quantity * price;
       }
 
-      lines.push({ product, quantity, lineTotal });
-      total += lineTotal;
+      lines.push({ product, quantity, lineTotalPrice });
+      total += lineTotalPrice;
     }
 
     return { lines, total };
