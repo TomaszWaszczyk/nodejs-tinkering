@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "vitest",
-    "testing": "node --test stack.test.mjs"
+    "testing": "node --test stack.test.mjs",
+    "ts": "tsx",
+    "typecheck": "tsc --noEmit"
   },
   "repository": {
     "type": "git",
@@ -23,13 +25,16 @@
   "homepage": "https://github.com/TomaszWaszczyk/nodejs-tinkering#readme",
   "dependencies": {
     "cors": "^2.8.5",
+    "csv-parser": "^3.0.0",
     "express": "^5.1.0",
     "fs": "^0.0.1-security",
-    "http": "^0.0.1-security",
-    "csv-parser": "^3.0.0"
+    "http": "^0.0.1-security"
   },
   "devDependencies": {
+    "@types/node": "^24.10.1",
     "clinic": "^13.0.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
     "vitest": "^3.1.2"
   }
 }
